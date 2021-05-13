@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.writebox {
+	margin: auto; 
+	width: 1000px;
+	padding: 50px 100px 50px 125px; 
+	 border-right: 1px solid  #c8c8c8;
+	 border-left: 1px solid   #c8c8c8;
+	
+}
+
+.writebox {
+	text-align: left;
+	margin: auto; 
+}
+
+.writeidimage {
+	width: 50px; 
+	height: 50px;
+	
+}
+
+.write1{
+	margin: auto;
+	border: 1px solid black; 
+}
+
+.write2{
+	margin: auto;
+	
+}
+
+.write3{
+	margin: auto;
+	text-align: right; 
+	
+}

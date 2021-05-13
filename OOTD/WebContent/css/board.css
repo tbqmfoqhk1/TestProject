@@ -1,0 +1,217 @@
+@CHARSET "UTF-8";
+
+/* boardlist css */
+.list-header {
+	width: 1000px;margin: 0 auto; padding: 10px 0; border: none;
+}
+
+.list-weather {
+	float: left;
+	width:950px;
+}
+
+.list-content { 
+	width: 1000px; margin: 0 auto; padding: 50px 0; min-height: 600px; 
+}
+
+.listPage {
+    text-align: center; 
+    padding: 5px; 
+}
+
+.list-ad { 
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.list-product {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5px;
+}
+
+.list-box {
+	width: 100%;
+	padding-top: 120%;
+	position: relative;
+	background-color: rgb(244, 244, 244);
+	text-align: center;
+}
+
+/*  검색창  */
+a:link { 
+	text-decoration: none;
+}
+body {
+	counter-reset: section;
+}
+section {
+	height: 40%;
+    width: 650px;
+    margin: 0px auto !important;
+    float: none !important;
+}
+.searchSection {
+	border: 2px solid;
+	height: 35%;
+	margin: 100px 0 0 35%;
+	z-index:2;
+	position: absolute;
+    display: none;
+	background-color:#fff;
+}	
+.searchMain {
+    	display: none;
+    	position: fixed;
+    	left: 0;
+    	top: 0;
+    	height: 100%;
+    	width: 100%;
+    	background: black;
+    	z-index:2;
+    	opacity: 0.60;
+}
+.searchOption{
+	background-color:#fff;
+}
+.searchBoard {
+	position: relative;
+    z-index: 1;
+}
+.searchHead {
+	-webkit-box-align: center;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-left: 580px;
+}
+.searchBar {
+    margin-left: 24px;
+    height: 35px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+    margin-right: 32px;
+    margin-bottom: 35px;
+}
+.searchGo {
+	background-color: white;
+    border: none;
+    color: white;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 13px;
+}
+.search {
+	width: 100%;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+}
+
+.styleSearch {
+	margin-left: 24px;
+}
+.styleSheet {
+	color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: bold
+}
+.styleLink{
+	display: flex;
+    margin-top: 14px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    margin-right: 16px;
+}
+.tag{
+	background-color: rgb(17, 17, 17);
+    color: white;
+    font-size: 17px;
+    border-radius: 18px;
+    padding: 6px 14px;
+    margin-right: 6px;
+    margin-bottom: 8px;
+}
+.searchPopular {
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; 
+}
+.glass {
+	width: 28px;
+    height: 28px;
+    margin-right: 5px;
+}
+.Delete {
+	width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#searchOne {		
+		display: none;
+	}
+.searchRank {
+	display: none;
+}
+#searchDate, #searchId {
+		width: 300px;
+		height: 60px;
+}
+th {
+	border: 1px solid blue;
+	background: #EAEAFF;
+	height: 20px;
+	line-height: 20px;
+	height: 16px;
+}
+th:nth-child(5n), th:nth-child(6n) {
+		width: 150px;
+}
+td {
+    -webkit-box-align: center;
+    margin-bottom: 15px;
+	font-size: 18px;
+    margin-right: 8px;
+   	color: rgb(17, 17, 17);
+}
+td::before {
+	counter-increment: section;
+  	content: " " counter(section) ". ";
+    font-weight: bold;
+   	margin-right: 8px;
+   	color: rgb(255, 44, 88);
+}
+tr:hover {
+	background: #EAEAEA;
+}	
+#resultNum, #requestDate {
+	display: none;
+}
+#result,.searchPopular {
+	margin-left: 30px;
+    margin-bottom: 20px
+}
+
+.searchBoard {
+    padding-left: 20%;
+
+}

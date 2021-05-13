@@ -1,0 +1,41 @@
+footer {
+	font-size: 0.75em;
+	margin: 10px 0 0 0;
+	background-image: url(../images/foot_back.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	text-align : center;
+}
+.head { 
+	text-align : center;
+}
+footer ul {
+	list-style: none;
+	margin: 0 0 0 150px;
+}
+footer ul li.no_line { background-image: none; }
+footer ul li {
+	float: left;
+	font-family: 'Gulim', Serif;
+	background-image: url(../images/foot_line.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+footer ul li a {
+	font-size: 1em;
+	display: block;
+	padding: 5px 15px;
+}
+footer img {
+	margin: 10px 0 0 40px;
+	float: left;
+	width: 150px;
+	border: none;
+}
+footer #foot_info {
+	margin: 10px 0 0 25px;
+	padding: 0 0 20px 180px;
+	line-height: 1.5em;
+	float: left;
+	width: 600px;	
+}

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.writebox1 {
+	margin: auto; 
+	width: 1000px;
+	padding: 50px 100px 50px 125px; 
+	 border-right: 1px solid  #c8c8c8;
+	 border-left: 1px solid   #c8c8c8;
+}
+.writebox1 {
+
+	margin: auto; 
+}
+.list-content { 
+	width: 1000px; margin: 0 auto; padding: 50px 0; min-height: 600px; 
+}
+
+.listPage {
+    text-align: center; 
+    padding: 5px; 
+}
+
+.list-ad { 
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.list-product {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5px;
+}
+
+.list-box {
+	width: 100%;
+	padding-top: 120%;
+	position: relative;
+	background-color: rgb(244, 244, 244);
+	text-align: center;
+}

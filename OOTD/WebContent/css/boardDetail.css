@@ -1,0 +1,385 @@
+@charset "UTF-8";
+.detail-box {
+	 
+	margin: auto; 
+	width: 1000px;
+	padding: 50px 100px 50px 125px; 
+	 border-right: 1px solid  #c8c8c8;
+	 border-left: 1px solid   #c8c8c8;
+	  
+}
+
+.detail-hero {
+  padding: 0px 0px !important;
+  margin: 0px !important;
+}
+
+.idimage {
+	border-radius:50%;
+	margin: 0px 6px;
+	
+}
+
+.detailcontainer {
+	width: 750px;
+	height:750px; 
+	overflow:hidden;
+
+	
+}
+.detail-all {
+	
+	padding-left: 30%; 
+}
+.detailcontainer {
+	
+	display:block; height:100%; border:0;
+}
+.detailsearchimage {
+	width: 50px; 
+	height: 50px;
+}
+.detail-cardbox {
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 0px !important;
+}
+
+/* ------------------------------- */
+/* Cardbox Heading
+---------------------------------- */
+.detail-cardbox .detail-cardbox-heading {
+  padding: 16px;
+  margin: 0;
+}
+.detail-cardbox-lg bg-white{
+	border: 1px solid black;
+}
+.detail-cardbox .detail-btn-flat .detail-btn-flat-icon {
+ border-radius: 50%;
+ font-size: 24px;
+ height: 32px;
+ width: 32px;
+ padding: 0;
+ overflow: hidden;
+ color: #fff !important;
+ background: #b5b6b6;
+ 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.detail-cardbox .detail-float-right .detail-dropdown-menu{
+  position: relative;
+  left: 13px !important;  
+}
+.detail-cardbox .detail-float-right a:hover{
+  background: #f4f4f4 !important;	
+}
+.detail-cardbox .detail-float-right a.detail-dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 4px 0px 4px 10px;
+  clear: both;
+  font-weight: 400;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 14px !important;
+  color: #848484;
+  text-align: inherit;
+  white-space: nowrap;
+  background: 0 0;
+  border: 0;
+}
+
+
+
+/* ------------------------------- */
+/* Media Section
+---------------------------------- */
+.detail-media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.detail-d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.detail-media .detail-mr-3{
+  margin-right: 1rem !important;
+}
+.detail-media img{
+  width: 48px !important;
+  height: 48px !important;
+  padding: 2px;
+  border: 2px solid #f4f4f4;
+} 
+
+.detail-header2{
+	width: 740px; 
+	padding: 10px 0px; 
+	border-bottom: 1px solid  #b5b6b6;
+}
+
+.detail-like {
+	width: 350px; 
+	float: left;
+}
+
+.detail-bookmark {
+	
+	text-align: right;
+}
+
+.detail-header {
+	width: 690px; 
+	
+
+}
+.detail-button {
+	
+float: right;
+  
+}
+
+.detail-media-body {
+	width: 640px;
+	
+  -ms-flex: 1;
+  flex: 1;
+  padding: .4rem !important;
+}
+.detail-media-body p{
+  font-family: 'Rokkitt', serif;	
+  font-weight: 500 !important;
+  font-size: 14px;
+  color: #88898a;
+}
+.detail-media-body small span{
+  font-family: 'Rokkitt', serif;	
+  font-size: 15px;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+
+/* ------------------------------- */
+/* Cardbox Item
+---------------------------------- */
+.detail-cardbox .detail-cardbox-item {
+    position: relative;
+    display: block;
+
+}
+.detail-cardbox .detail-cardbox-item img{
+}
+.detail-img-responsive{
+    display: block;
+    max-width: 800px;
+    height: auto;
+}	
+.detail-fw {
+    width: 100% !important;
+	height: auto;
+}
+
+.detail-contents {
+	height: 300px; 
+	 font-family: 'Abhaya Libre', serif;
+  font-size: 14px !important;
+  color: #848484;
+  text-align : center;
+}
+.detail-hash{
+	text-align:right;
+	font-family: 'Abhaya Libre', serif;
+  font-size: 14px !important;
+  color: #848484;
+}
+.detail-button1 {
+	
+	width: 200px; 
+	height: 2000px; 
+	text-align: left;
+	
+}
+
+/* ------------------------------- */
+/* Cardbox Base
+---------------------------------- */
+.detail-cardbox-base{
+ border-bottom: 1px solid #b5b6b6;
+}	
+.detail-cardbox-base ul{
+ margin: 10px 0px 10px 15px!important; 
+ padding: 10px !important;
+ font-size: 0px;	
+  display: inline-block;
+}
+.detail-cardbox-base li {
+  list-style: none;
+  margin: 0px 0px 0px -8px !important;
+  padding: 0px 0px 0px 0px !important;
+  display: inline-block;
+}
+
+.detail-cardbox-base li a{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.detail-cardbox-base li a i{
+ position: relative;
+ top: 4px; 
+ font-size: 16px;
+ color: #8d8d8d;
+ margin-right: 15px;
+}
+.detail-cardbox-base li a span{
+ font-family: 'Rokkitt', serif;
+ font-size: 14px;
+ color: #8d8d8d;
+ margin-left: 20px;
+ position: relative;
+ top: 5px; 
+}
+.detail-cardbox-base li a em{
+ font-family: 'Rokkitt', serif;
+ font-size: 14px;
+ color: #8d8d8d;
+ position: relative;
+ top: 3px; 
+}
+.detail-cardbox-base li a img{
+  width: 25px;
+  height: 25px;
+  margin: 0px !important;
+  border: 2px solid #fff;
+}
+
+
+/* 댓글부분 */
+.replyTable {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	border-collapse: collapse;
+	border: 1px solid #EAEAEA;
+}
+
+.replyUser {	
+	float: left;
+	width: 369px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	text-align: left;
+	background: #EFEFEF;
+}
+.replyModify {
+	float: right;
+	width: 369px;
+	height: 30px;
+	line-height: 30px;
+	padding-right: 10px;
+	text-align: right;
+	background: #EFEFEF;
+}
+.replyContent {
+	clear: both;
+	line-height: 20px;	
+	padding: 5px 10px 5px 10px;	
+	/* line-height: 30px; */
+}
+
+
+
+/* ------------------------------- */
+/* Cardbox Comments
+---------------------------------- */
+#replyTable {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	border-collapse: collapse;
+
+}
+.replyHeader {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+#replyTitle {
+	clear: both;
+	height: 30px;
+	line-height: 30px;
+	background: #898989;	
+	color: white;
+	border: 1px solid #898989;
+
+	font-size: 14px;
+}
+.reply {
+	float: right;
+	width: 258px;	
+	text-decoration: none;	
+
+}
+.replyWriteTable{
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	border: 0px;
+	margin: 5px 0 5px 0;
+	font-size: 12px;
+}
+#replyWriteTitle {
+	background: #F7F7F7;
+	padding: 3px;	
+	text-align: center;
+}
+.replyWriteContent {
+	width: 100%;
+	height: 100%;
+
+}
+.replyForm {
+	width: 736px;
+	margin: 0 auto;
+	display: none;
+}
+#replyContent {	
+	width: 670px;
+	height: 56px;	
+	padding: 0px;
+	word-break: break-all;
+		float: left;
+}
+
+#replyWriteButton {
+	width: 60px;
+	height: 57px;
+	border: 0px;
+}
+.notReply {
+	padding: 10px;
+}
+
+textarea { border: 1px solid #c0c0c0; font-size: 12px; }
+/* ------------------------------- */
+/* Author
+---------------------------------- */
+.detail-author a{
+ font-family: 'Rokkitt', serif;
+ font-size: 16px;
+ color: #00C4CF;
+}
+.detail-author p{
+ font-family: 'Rokkitt', serif;
+ font-size: 16px;
+ color: #8d8d8d;
+}
+
