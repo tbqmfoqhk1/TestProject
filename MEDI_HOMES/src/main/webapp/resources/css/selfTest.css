@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+.page-content2 {
+	width: 889px;  
+	margin : 0 auto;
+	background: #fff;
+
+}
+
+.tabbed2 {
+	overflow-x: hidden; 
+	margin: 32px 0;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.tabbed2 [type="radio"] {
+	
+	display: none;
+}
+
+.tabs2 {
+	display: flex;
+	align-items: stretch;
+	list-style: none;
+	padding: 0;
+	border-bottom: 1px solid #ccc;
+}
+.tab2 > label {
+	display: block;
+	width : 80px;
+	margin-bottom: -1px;
+	padding: 12px 15px;
+	border: 1px solid #ccc;
+	background: #eee;
+	color: #666;
+	font-size: 18px; 
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;	
+	transition: all 0.3s;
+	border-left: none;
+}
+.tab2:hover label {
+	border-top-color: #333;
+	color: #333;
+}
+
+.tab-content2 {
+	display: none;
+	color: #777;
+}
+
+/* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+.tabbed2 [type="radio"]:nth-of-type(1):checked ~ .tabs2 .tab2:nth-of-type(1) label,
+.tabbed2 [type="radio"]:nth-of-type(2):checked ~ .tabs2 .tab2:nth-of-type(2) label,
+.tabbed2 [type="radio"]:nth-of-type(3):checked ~ .tabs2 .tab2:nth-of-type(3) label,
+.tabbed2 [type="radio"]:nth-of-type(4):checked ~ .tabs2 .tab2:nth-of-type(4) label,
+.tabbed2 [type="radio"]:nth-of-type(5):checked ~ .tabs2 .tab2:nth-of-type(5) label,
+.tabbed2 [type="radio"]:nth-of-type(6):checked ~ .tabs2 .tab2:nth-of-type(6) label,
+.tabbed2 [type="radio"]:nth-of-type(7):checked ~ .tabs2 .tab2:nth-of-type(7) label,
+.tabbed2 [type="radio"]:nth-of-type(8):checked ~ .tabs2 .tab2:nth-of-type(8) label {
+	border-bottom-color: #fff;
+	border-top-color: steelblue;
+	background: #fff;
+	color: #222;
+}
+
+.tabbed2 [type="radio"]:nth-of-type(1):checked ~ .tab-content2:nth-of-type(1),
+.tabbed2 [type="radio"]:nth-of-type(2):checked ~ .tab-content2:nth-of-type(2),
+.tabbed2 [type="radio"]:nth-of-type(3):checked ~ .tab-content2:nth-of-type(3),
+.tabbed2 [type="radio"]:nth-of-type(4):checked ~ .tab-content2:nth-of-type(4),
+.tabbed2 [type="radio"]:nth-of-type(5):checked ~ .tab-content2:nth-of-type(5),
+.tabbed2 [type="radio"]:nth-of-type(6):checked ~ .tab-content2:nth-of-type(6),
+.tabbed2 [type="radio"]:nth-of-type(7):checked ~ .tab-content2:nth-of-type(7),
+.tabbed2 [type="radio"]:nth-of-type(8):checked ~ .tab-content2:nth-of-type(8) {
+	display: block;
+}
+
+.tab-content2 .disease_li2 {width : 175px; float: left;
+    padding: 0;
+    font-weight: normal;
+    margin-top: 18px;
+    width: 175px;
+    height: 22px;
+    
+    border-right: 1px solid #ccc;
+    list-style: none;
+    line-height: 1.5;
+    font-size: 13px;
+}
+.tab-content2 .disease_li2_last{width : 175px;
+	border-right: none;
+	float: left;
+    padding: 0;
+    font-weight: normal;
+    margin-top: 18px;
+    width: 175px;
+    height: 22px;
+    
+    list-style: none;
+    line-height: 1.5;
+    font-size: 13px;
+}    
+.tab-content2 .disease_li2 > p {color : black; padding-left : 30px;}
+.tab-content2 .disease_li2_last > p {color : black; padding-left : 30px;}
+.tab-content2 input[type="checkbox"] {float: left; position: relative; left: 10px; top: 6px;}
+
+.Result{border-top: 1px solid black; padding-top: 25px;}
+/* .testResult {float : left;} */
+.testResultSpan {width : 155px; display : inline-block; line-height: 1.9;}
+#result {color : steelblue}
+#result1 {color : steelblue}

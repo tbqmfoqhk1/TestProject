@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+									
+<mapper namespace="com.springstudy.project.mapper.ProjectMapper" >
+
+	<select id="projectList" parameterType="hashmap" resultType="Project" >
+		SELECT * FROM test01
+		<where>
+			<if test="rate == 'NaN'">
+				disease = #{keyword}
+			</if>
+			<if test="rate != 'NaN'">
+				disease = #{keyword} AND grade = #{rate}
+			</if>
+		</where>
+		LIMIT #{startRow}, #{num};
+	</select>
+	
+	<select id="getProjectCount" resultType="int">
+        SELECT
+            COUNT(no)
+        FROM test01
+        <where>
+            <if test="rate == 'NaN'">
+                disease = #{keyword}
+            </if>
+            <if test="rate != 'NaN'">
+                disease = #{keyword} AND grade = #{rate}
+            </if>
+        </where>
+    </select>
+	
+	<select id="instrumentsList" parameterType="hashmap" resultType="instruments" >
+		SELECT * FROM test02
+		WHERE instruments = #{keyword}
+		LIMIT #{startRow}, #{num}
+	</select>
+	
+	<select id="getInstrumentsCount" resultType="int">
+		SELECT
+			COUNT(no)
+		FROM test02
+		WHERE instruments = #{keyword}
+	</select>
+	
+	<select id="projectHealthInfoList" resultType="HealthInfo">
+		SELECT 
+			*
+		FROM health_info
+		LIMIT #{startRow}, #{num}
+	</select>
+	
+	<select id="getHealthInfoCount" resultType="int">
+		SELECT
+		COUNT(no)
+		FROM health_info
+	</select>
+						
+	<select id="projectDiseaseList" resultType="Disease">
+		SELECT 
+			* 
+		FROM disease
+		WHERE type = #{keyword}
+		LIMIT #{startRow}, #{num}
+	</select>
+	
+	<select id="getDiseaseCount" resultType="int">
+		SELECT
+		COUNT(no)
+		FROM disease
+		WHERE type = #{keyword}
+	</select>
+</mapper>	
+
+
+
